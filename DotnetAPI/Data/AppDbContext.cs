@@ -9,11 +9,12 @@ namespace DotnetAPI.Data
 {
     public class AppDbContext : DbContext
     {
-        public AppDbContext(DbContextOptionsBuilder<AppDbContext> options) :base(options)
+        public AppDbContext(DbContextOptions<AppDbContext> options) :base(options)
         {
             
         }
 
-        public DbSet<ToDo> Todos => Set<ToDo>();
+        public DbSet<ToDo> ToDos => Set<ToDo>();
     }
+    
 }
